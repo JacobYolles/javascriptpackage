@@ -4,8 +4,8 @@ This section will cover how javascript handles its programming. Specific element
 Conditionals are used to perform actions based on how a certain expression is evaluated. They reflect the value of truthfullness of certain expressions. 
 First one to cover is IF, ELSE IF, and ELSE. 
 EXAMPLE:
-We create an expression that states that our value (number) is 5. We are then telling the computer that if the number is greater than 10 (it's not, as 5 is less than 10), than to print to the console the string "This number is large"  then, it's telling the computer, else (which means otherwise in this case), than to print to the console the string "This number is small!"
-let number = 5; 
+First,  create an expression that states that our value (number) is 4. Then it tells the computer that if the number is greater than 10 (it's not, as 4 is less than 10), than to print to the console the string "This number is large"  then, it's telling the computer, else (which means otherwise in this case), than to print to the console the string "This number is small!"
+let number = 4; 
 if (number > 10) {
     console.log("This number is large")
 }
@@ -13,4 +13,54 @@ else {
     console.log("This number is small!")
 }
 RESULT: 
-The result from the above example will be the console displaying "This number is small!". The reason for this is that the computer evaluates whether the number is greater than 10 first, and it flags it as false, THEN it moves to the ELSE (The catch for if the first argument is not met), and finds that to be the case and therefore prints to the console, "This number is small!" IMPORTANT TO NOTE: If the first argument is met to be true, 
+The result from the above example will be the console displaying "This number is small!". The reason for this is that the computer evaluates whether the number is greater than 10 first, and it flags it as false, THEN it moves to the ELSE (The catch for if the first argument is not met), and finds that to be the case and therefore prints to the console, "This number is small!" IMPORTANT TO NOTE: If the first argument is met to be true, then the rest of the code will never be reached as the solution is already found. Conversly, the else argument will only be evaluated should the if argument is found to be false.
+
+Elements previously learned can be used to create a more complex IF, ELSE IF, and ELSE argument. 
+EXAMPLE: 
+let number = 3 + 1;
+if (number > 10) {
+    console.log("This number is large")
+}
+else if (number > 0 && number < 5) {
+    console.log("This number is medium sized")
+}
+else {
+    console.log("This number is small!")
+}
+RESULT: 
+The result here will be the console displaying "This number is medium sized". The reason for this is that the computer evaluates wheter the number is greater than 10 first, (it's not as 3 + 1 (base number of 4) ) is smaller than 10. This argument is flagged as false, as 4 is smaller than 10. THEN it moves to the ELSE IF (The first of the two possible catches for when the first argument is not met), and this is now evaluated. This is found to be true as 4 is greater than 0 and less than 5, and therefore will display in the console "This number is medium sized". The else will never be hit as above the else wasn't hit because the arguement before it was found to be true.
+
+CREATING AN EXAMPLE WITHOUT PRE BASED INFORMATION.
+Imagine secretNumber is the variable. This is holding a number value. The job is to write code that logs "This number is large" to the console, if secretNumber is greater than 5. However if the number fits into the argument otherwise display to the console "This number is small!"
+First step here is to create an IF statement. 
+1. if() {
+
+}
+1A. This states, an if with an argument inside of it and if that argument is met to run the code inside of it. 
+1B. Inside of the if() argument there is placed the condition that the truthfullness is wishing to be evalutated for. For this example it is wanted to evaluate if secretNumber is greater than 5. To place this what would be written is, 
+1C. if(secretNumber > 5) {
+
+}
+1D. Now, the if condition has been established, but the response that needs to occur should the result land in the if "Bucket" needs to be filled in. This is to be filled with the console log "This number is large".
+1E. console.log("This number is large")
+1F. if(secretNumber > 5) {
+    console.log("This number is large");
+}
+Now the else statment should be created.
+The else code is the reflection of the statement of running the value inside of it should the if not be filled, so therefore there is no need to add arguments to the else condition. As stated above the alternative to the if condition is to console.log out "This number is small!".
+1A. Old Code: 
+if(secretNumber > 5) {
+    console.log("This number is large");
+}
+1B. Writing the ELSE statement:
+else {
+    console.log("This number is small!")
+}
+1C. Now just combining the two.
+1D. 
+if(secretNumber > 5) {
+    console.log("This number is large");
+}
+else {
+    console.log("This number is small!")
+}
