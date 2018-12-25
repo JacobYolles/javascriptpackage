@@ -72,3 +72,59 @@ Create an expression to force an OR property to set itself to false. (String Exa
 3. Write the second expression that will be set to false. For simplicity sake in this example the intial string will stay as "peanuts".
 3A. "peanuts" !== "peanuts" (This will evaluate to false, as the string value of "peanuts" IS EQUAL (identical) to "peanuts", but we have told it to evaluate if they ARE NOT equal). (Now we add this chunk to the end of the expression from 2A).
 3B. "peanuts" === "walnuts" || "peanuts" !== "peanuts" (string of peanuts is equal to the string of walnuts (false), OR (||) string of peanuts is not equal to the string of peanuts (false, they are equal) ).
+
+Accessors: 
+Accessors are used to access specific elements in an array or properties on an object. 
+Remember: Arrays use BRACKET notation to access elements. Objects can use either BRACKET or DOT notation but usually use DOT.
+
+Array elements are accessed using BRACKETS with the element index. Important to note INDEXING ALWAYS STARTS AT 0.
+Array Example: 
+var soups = ["Tomato", "Cheddar", "Miso"]
+Using the console.log() of the object with the Bracket notation we can find a particular item inside of our variable soups.
+console.log(soups[0]);
+Result will be "Tomato".
+console.log(soups[2]); 
+Result will be "Miso".
+
+Object properties are accessed using BRACKET or DOT notation, though DOT is the standard. 
+Object Example: 
+var colorado = {
+    capital: "Denver",
+    statehood: 1875, 
+    tastyFood: "Pizza"
+}
+Using the console.log() of the object with the Dot notation we can find a particular item inside of our variable colorado.
+console.log(colorado.capital);
+Result will be "Denver". 
+console.log(colorado.statehood);
+Result will be 1875 (Note this was inputted without quotes as its a number, not a string).
+(Using Bracket Notation)
+console.log(colorado["tastyFood"]);
+Result will be "Pizza".
+
+Accessors are also able to reassign an element in an Array or Object.
+Array Example: 
+var soups = ["Tomato", "Cheddar", "Miso"]
+Now overwriting: 
+
+soups[0] = "Vegetable";
+
+When reexamining the variable soup it will show: 
+var soups = ["Vegetable", "Cheddar", "Miso"]
+
+Object Example: 
+var colorado = {
+    capital: "Denver",
+    statehood: 1875, 
+    tastyFood: "Pizza"
+}
+Now overwriting:
+
+colorado.tastyFood = "Salad"
+
+When reexamining the object Colorado it will show: 
+var colorado = {
+    capital: "Denver",
+    statehood: 1875, 
+    tastyFood: "Salad"
+}
