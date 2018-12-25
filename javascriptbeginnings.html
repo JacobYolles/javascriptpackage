@@ -37,3 +37,38 @@ Ex. An expression checking if an airplane is not equal to a car.
 "airplane" !== "car";
 3. Using a comparison operator to create an expression that evaluates to true.
 3A. (Number): 2 > 1; 1 < 2;  4 === 4; 5 >= 4; 5<= 10; 5 !== 10;  (2 is greater than 1. 1 is less than 2. 4 is equal to 4. 5 is greater than or equal to 4. 5 is less than or equal to 10. 5 is not equal to 10.)
+
+Logic Operators:
+Logic Operators create expressions that can evaluate to true, or false. 
+Usage: 1. && (and) 2. || (or) 3. ! (not).
+Concerning && (And): Using this operator requires that the expressions on BOTH sides of this operator must be true, for the expression to evaluate out to be true, otherwise will evaluate out as false.
+Example: true && true; (true). false && true (false). 4 > 5 && 5 === 5; (false). 4 > 2 && 5 === 5; (true).
+Example of writing and understanding an && statment (and)
+Create an expression to determine is 2 is less than 6 AND 2 is greater than 1. 
+1. Write the base expression to determine if 2 is less than 6.
+1A. 2 < 6; 
+2. Account for the need to use the && (and) operator. To do this remove the ; and add &&
+2A. 2 < 6 &&
+3. Write the second expression to determine if 2 is greater than 1, this will be added after the &&.
+3A. 2 > 1. (than add it to the expression.)
+3B. 2 < 6 && 2 > 1;  (2 is less than 6 AND 2 is greater than 1. (True, and true). )
+Concering || (Or): One of the expressions, on either side of the || must be true, for the expression to evaluate out to be true.
+Example: false || true (true). false || false (false). 4 < 1 || 5 !== 5; (false). 4 > 1 || 5 !== 5; (true)
+
+Create an expression to force an OR property to set itself to false. (Number Example).
+1. The expression has to be false on BOTH sides. Start by creating the false side on the left. 
+1A. 2 > 6; (This will evaluate to false, as 2 is not greater than 6).
+2. Account for the need to use the || (or) operator. To do this remove the ; and add ||
+2A. 2 > 6 ||
+3. Write the second expression that will be set to false. For simplicity sake in this example the intial number will stay as 2. 
+3A. 2 < 1; (This will also evaluate to false, as 2 is not less than 1). (Now we add this chunk to the end of the expression from 2A).
+3B. 2 > 6 || 2 < 1; (2 is greater than 6 OR 2 is less than 1. (False, and false). ) 
+
+Create an expression to force an OR property to set itself to false. (String Example).
+1. The expression has to be false on BOTH sides. Start by creating the false side on the left. 
+1A. "peanuts" === "walnuts"; (This will evaluate to false, as the string value of "peanuts" is not equal (identical) to "walnuts").
+2. Account for the need to use the || (or) operator. To do this remove the ; and add ||
+2A. "peanuts" === "walnuts" ||
+3. Write the second expression that will be set to false. For simplicity sake in this example the intial string will stay as "peanuts".
+3A. "peanuts" !== "peanuts" (This will evaluate to false, as the string value of "peanuts" IS EQUAL (identical) to "peanuts", but we have told it to evaluate if they ARE NOT equal). (Now we add this chunk to the end of the expression from 2A).
+3B. "peanuts" === "walnuts" || "peanuts" !== "peanuts" (string of peanuts is equal to the string of walnuts (false), OR (||) string of peanuts is not equal to the string of peanuts (false, they are equal) ).
