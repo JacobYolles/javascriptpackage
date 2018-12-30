@@ -30,7 +30,7 @@ else {
 RESULT: 
 The result here will be the console displaying "This number is medium sized". The reason for this is that the computer evaluates wheter the number is greater than 10 first, (it's not as 3 + 1 (base number of 4) ) is smaller than 10. This argument is flagged as false, as 4 is smaller than 10. THEN it moves to the ELSE IF (The first of the two possible catches for when the first argument is not met), and this is now evaluated. This is found to be true as 4 is greater than 0 and less than 5, and therefore will display in the console "This number is medium sized". The else will never be hit as above the else wasn't hit because the arguement before it was found to be true.
 
-CREATING AN EXAMPLE WITHOUT PRE BASED INFORMATION.
+CREATING A NUMERIC EXAMPLE WITHOUT PRE BASED INFORMATION.
 Imagine secretNumber is the variable. This is holding a number value. The job is to write code that logs "This number is large" to the console, if secretNumber is greater than 5. However if the number fits into the argument otherwise display to the console "This number is small!"
 First step here is to create an IF statement. 
 1. if() {
@@ -64,3 +64,69 @@ if(secretNumber > 5) {
 else {
     console.log("This number is small!")
 }
+
+CREATING A BOOLEAN EXAMPLE WITHOUT PREVIOUS INFORMATION
+Consider where there is a variable called isInClass that is holding a BOOLEAN value. Now code should be written that logs the response "Welcome to school!" if isInClass is true.
+1. Start by creating the if for in case the BOOLEAN value of isInClass is true.
+1A. Again start with the shell, 
+if () {
+
+}
+1B. Now fill it in with what we are looking to evaluate to run our welcome response against should it be true:
+if (isInClass) {
+
+}
+1C. NOTE: it is possible to write this as below, but it is not needed to be written that way since it's already implied that that value is runnning against the true value only.
+if (isInClass === true) {
+
+}
+1D. Finally, fill in the condition that is under isInClass as was described earler as being a console.log that reads: console.log("Welcome to school!")
+1E. Combine them:
+if (isInClass) {
+    console.log("Welcome to school!")
+}
+1F. For note: this reads, if (isInClass)'s value is true, then console log "Welcome to school!"
+
+A HARDER EXAMPLE:
+Consider where there is a variable called isInClass and another called isLearning. Now write code that console logs "Good work!" should isInClass AND isLearning be true, console logs "Pay attention" should isInClass be true, but isLearning is false, and console logs "Go to School!" otherwise.
+
+1. Start with creating the if shell: 
+ if () {
+
+ }
+1B. Add the information that is known to the if: 
+if (isInClass && isLearning) {
+    console.log("Good Work!")
+}
+1C. Next add the secondary possibility keeping in mind to phrase it as an else if
+else if () {
+
+}
+1D. Add the information known: 
+else if (IsInClass) {
+    console.log("Pay attention")
+}
+1E. Combine the first two possibilities.
+if (isInClass && isLearning) {
+    console.log("Good Work!")
+}
+else if (IsInClass) {
+    console.log("Pay attention")
+}
+1F. Complete the final possiblity, making sure it displays as an else.
+else  {
+    console.log("Go to School!")
+}
+1G. Combine all them together.
+if (isInClass && isLearning) {
+    console.log("Good Work!")
+}
+else if (IsInClass) {
+    console.log("Pay attention")
+}
+else  {
+    console.log("Go to School!")
+}
+
+LOOKING AT LOOPS:
+Loops are used to be able to execute code over and over and over.
