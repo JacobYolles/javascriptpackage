@@ -27,3 +27,28 @@ for (var i = 10; i > -1 i--) {
     console.log(i)
 }
 This for loop will read as for when the variable i is equal to 10, as long as i is greater than negative one. (0 or above) decrement i by 1 each time and show the values of i as they shift.
+
+USING FOR LOOPS WITH STRINGS AS THE CONSOLE LOG VALUE
+For loops can also be used with string values. 
+EXAMPLE: 
+Using a for loop, print the string "Good Work!" 4 times.
+Here the same principal as above is used, but the desired console log can here be a string.
+1. Same formula as above for the value desired (Amount of times to run)
+1B. for (var i = 0; i < 4; i++) {
+
+}
+1C. Now simply place the desired console log inside of the brackets.
+1D. for (var i = 0; i < 4; i++) {
+console.log("Good Work!")
+}
+1E. The printout will read "Good Work!" in a line straight down 4 times.
+
+One of the most common uses of a for loop is to ITERATE THROUGH AN ARRAY.
+EXAMPLE: 
+Suppose the given variable below is used, and all three values are wanting to be printed.
+var favoriteFoods = ["Pizza", "Pasta", "Lamb"]
+To use a for loop to print each variable the following would be done:
+1. for (var i = 0; i < favoriteFoods.length; i++) {
+    console.log(favoriteFoods[i])
+}
+This reads as for variable i where i is equal to 0 is less than the total length of the favoriteFoods variable, and i continuing to increase, console log each favorite food as i reaches its position.
