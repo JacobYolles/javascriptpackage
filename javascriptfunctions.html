@@ -1,1 +1,45 @@
 FUNCTIONS: 
+Functions can be thought of as containers that take in input, then apply rules to it, and finally give an output. These inputs are known as PARAMETERS. These outputs are known as RETURN VALUE.
+Functions are named segments of code that can be executed at any time simply by recalling the name of the function followed by parenthesis. 
+The primary purpose for functions is to avoid writting code for tasks that are being summoned multiple times. 
+They also allow for code to be more readable, scalable, and testable.
+
+LOOKING AT FUNCTIONS:
+There are THREE ways to write a function.
+1. FUNCTION EXPRESSION:
+var pizza = function() {
+    console.log("A Mushroom Pizza!");
+}
+2. FUNCTION DECLARATION:
+function pizza() {
+    console.log("A Mushroom Pizza!");
+}
+3. ARROW FUNCTIONS:
+var pizza = () => {
+    console.log("A Mushroom Pizza!");
+}
+EXAMINING FUNCTION EXPRESSIONS:
+Creating the function expression does not execute the code that it creates, for that to happen the function must be called. Here is an example: 
+var pizza = function() {
+    console.log("A Mushroom Pizza!");
+}
+
+pizza();
+
+once the pizza(); code is ran, the console will log and print "A Mushroom Pizza!"
+
+PARAMETERS: 
+Functions may have parameters, or variables that exist inside the function. The parameters may have any name, and function just as normal variables would. 
+
+The PARAMETERS are assigned a value when the function is called by passing arguments inside of the parenthesis. 
+
+Example: 
+var pizza = function(firstTopping, secondTopping) {
+    console.log(firstTopping, secondTopping);
+};
+
+pizza("Mushroom", "Sausage");
+
+When the pizza is called, the variables of firstTopping and secondTopping are created, and then given the values of Mushroom, and Sausage.
+
+Depending on what is written in the call of pizza the console log will change to reflect it, regardless of whether strings or numbers are used. 
