@@ -12,8 +12,141 @@
     
     <!-- Navigation: -->
     <h1 id="gopage"> Click below for other pages: </h1>
-    <a href="javascripthomehtml.html"> Home: </a>
-    <a href="javascriptbasicshtml.html"> Basics: </a>
+    <a href="javascripthomehtml.html"> Home: </a> |
+    <a href="javascriptbasicshtml.html"> Basics: </a> |
+    <a href="javascriptoperatorshtml.html"> Operators</a> |
 
+
+
+    Javascript uses 5 instances of data manipulation. 
+1. Operators/Accessors, 2. Loops, 3. Conditionals, 4. Functions, 5. Event Listeners.
+
+1. Operators/Accessors: The way that the user can manipulate the value a variable holds.
+Operators 1: Arithmatic Operators: Used to make a single numerical value from numerical operands. These are: 1. + Addition, 2.- Subtraction, 
+
+3. * Multiplication, 4. / Division, 5. % Modulus (the remainder from division.) 6. ++ Increment (increasing a number by one) 7. -- Decrement (decreasing a number by one)
+Combining values and operators will force them to become expressions which will get evaluated to a single value. 
+Ex: 3 - 2; (evalutates out to 1.)
+The value of an expression may be stored as a variable.
+let number = 3 - 2; (evaluates out to 1.)
+Some operators can be applied directly on variables thus adjusting their values. 
+let number = 3 - 2; 
+number ++ 
+number evaluates out to 2 because it was incremented by one.
+let sum = 3 + 2;
+(using var in the next instance just to show the interchangability.)
+var product = 1 * 2; Product will hold the value of 2.
+Being able to create variables that are within and used by other variables.
+Ex: 
+var goalNumber = 8; 
+var half = goalNumber / 2;
+Var goalNumber will assign itself the value of 8 and var half will assign itself the value of 4.
+
+Comparison Operators: 
+Comparison Operators are operators that form an expression that compares two values and evaluates whether it is true or false. 
+Example: 50 > 25; (true) and 50 < 25; (false).
+The list of primary comparison operators are: 1. > Greater than. 2. < Less than. 3. === Equal to. 4. >= Greater than or equal to.
+5. <= Less than or equal to. 6. !== Not equal to.
+Examples: 
+1. Creating an expression to check if two numbers are identical: 
+10 === 5; (10 is equal to 5), (Result will be false.)
+10 === 10; (10 is equal 10), (Result will be true.)
+5 >= 2 (5 is greater than or equal to 2), (Result will be true.)
+2. Checking inequality with strings. (Important to remember, the string values must be within quotes (" ") )
+Ex. An expression checking if an airplane is not equal to a car.
+"airplane" !== "car";
+3. Using a comparison operator to create an expression that evaluates to true.
+3A. (Number): 2 > 1; 1 < 2;  4 === 4; 5 >= 4; 5<= 10; 5 !== 10;  (2 is greater than 1. 1 is less than 2. 4 is equal to 4. 5 is greater than or equal to 4. 5 is less than or equal to 10. 5 is not equal to 10.)
+
+Logic Operators:
+Logic Operators create expressions that can evaluate to true, or false. 
+Usage: 1. && (and) 2. || (or) 3. ! (not).
+Concerning && (And): Using this operator requires that the expressions on BOTH sides of this operator must be true, for the expression to evaluate out to be true, otherwise will evaluate out as false.
+Example: true && true; (true). false && true (false). 4 > 5 && 5 === 5; (false). 4 > 2 && 5 === 5; (true).
+Example of writing and understanding an && statment (and)
+Create an expression to determine is 2 is less than 6 AND 2 is greater than 1. 
+1. Write the base expression to determine if 2 is less than 6.
+1A. 2 < 6; 
+2. Account for the need to use the && (and) operator. To do this remove the ; and add &&
+2A. 2 < 6 &&
+3. Write the second expression to determine if 2 is greater than 1, this will be added after the &&.
+3A. 2 > 1. (than add it to the expression.)
+3B. 2 < 6 && 2 > 1;  (2 is less than 6 AND 2 is greater than 1. (True, and true). )
+Concering || (Or): One of the expressions, on either side of the || must be true, for the expression to evaluate out to be true.
+Example: false || true (true). false || false (false). 4 < 1 || 5 !== 5; (false). 4 > 1 || 5 !== 5; (true)
+
+Create an expression to force an OR property to set itself to false. (Number Example).
+1. The expression has to be false on BOTH sides. Start by creating the false side on the left. 
+1A. 2 > 6; (This will evaluate to false, as 2 is not greater than 6).
+2. Account for the need to use the || (or) operator. To do this remove the ; and add ||
+2A. 2 > 6 ||
+3. Write the second expression that will be set to false. For simplicity sake in this example the intial number will stay as 2. 
+3A. 2 < 1; (This will also evaluate to false, as 2 is not less than 1). (Now we add this chunk to the end of the expression from 2A).
+3B. 2 > 6 || 2 < 1; (2 is greater than 6 OR 2 is less than 1. (False, and false). ) 
+
+Create an expression to force an OR property to set itself to false. (String Example).
+1. The expression has to be false on BOTH sides. Start by creating the false side on the left. 
+1A. "peanuts" === "walnuts"; (This will evaluate to false, as the string value of "peanuts" is not equal (identical) to "walnuts").
+2. Account for the need to use the || (or) operator. To do this remove the ; and add ||
+2A. "peanuts" === "walnuts" ||
+3. Write the second expression that will be set to false. For simplicity sake in this example the intial string will stay as "peanuts".
+3A. "peanuts" !== "peanuts" (This will evaluate to false, as the string value of "peanuts" IS EQUAL (identical) to "peanuts", but we have told it to evaluate if they ARE NOT equal). (Now we add this chunk to the end of the expression from 2A).
+3B. "peanuts" === "walnuts" || "peanuts" !== "peanuts" (string of peanuts is equal to the string of walnuts (false), OR (||) string of peanuts is not equal to the string of peanuts (false, they are equal) ).
+
+Accessors: 
+Accessors are used to access specific elements in an array or properties on an object. 
+Remember: Arrays use BRACKET notation to access elements. Objects can use either BRACKET or DOT notation but usually use DOT.
+
+Array elements are accessed using BRACKETS with the element index. Important to note INDEXING ALWAYS STARTS AT 0.
+Array Example: 
+var soups = ["Tomato", "Cheddar", "Miso"]
+Using the console.log() of the object with the Bracket notation we can find a particular item inside of our variable soups.
+console.log(soups[0]);
+Result will be "Tomato".
+console.log(soups[2]); 
+Result will be "Miso".
+
+Object properties are accessed using BRACKET or DOT notation, though DOT is the standard. 
+Object Example: 
+var colorado = {
+    capital: "Denver",
+    statehood: 1875, 
+    tastyFood: "Pizza"
+}
+Using the console.log() of the object with the Dot notation we can find a particular item inside of our variable colorado.
+console.log(colorado.capital);
+Result will be "Denver". 
+console.log(colorado.statehood);
+Result will be 1875 (Note this was inputted without quotes as its a number, not a string).
+(Using Bracket Notation)
+console.log(colorado["tastyFood"]);
+Result will be "Pizza".
+
+Accessors are also able to reassign an element in an Array or Object.
+Array Example: 
+var soups = ["Tomato", "Cheddar", "Miso"]
+Now overwriting: 
+
+soups[0] = "Vegetable";
+
+When reexamining the variable soup it will show: 
+var soups = ["Vegetable", "Cheddar", "Miso"]
+
+Object Example: 
+var colorado = {
+    capital: "Denver",
+    statehood: 1875, 
+    tastyFood: "Pizza"
+}
+Now overwriting:
+
+colorado.tastyFood = "Salad"
+
+When reexamining the object Colorado it will show: 
+var colorado = {
+    capital: "Denver",
+    statehood: 1875, 
+    tastyFood: "Salad"
+}
 </body>
 </html>
