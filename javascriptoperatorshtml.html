@@ -124,7 +124,8 @@ Create an expression to determine is 2 is less than 6 AND 2 is greater than 1.
 Concering || (Or): One of the expressions, on either side of the || must be true, for the expression to evaluate out to be true.
 Example: false || true (true). false || false (false). 4 < 1 || 5 !== 5; (false). 4 > 1 || 5 !== 5; (true)</p>
 
-Create an expression to force an OR property to set itself to false. (Number Example).
+<p>
+<Strong>Create an expression to force an OR property to set itself to false. (Number Example).</Strong>
 1. The expression has to be false on BOTH sides. Start by creating the false side on the left. 
 1A. 2 > 6; (This will evaluate to false, as 2 is not greater than 6).
 2. Account for the need to use the || (or) operator. To do this remove the ; and add ||
@@ -132,15 +133,23 @@ Create an expression to force an OR property to set itself to false. (Number Exa
 3. Write the second expression that will be set to false. For simplicity sake in this example the intial number will stay as 2. 
 3A. 2 < 1; (This will also evaluate to false, as 2 is not less than 1). (Now we add this chunk to the end of the expression from 2A).
 3B. 2 > 6 || 2 < 1; (2 is greater than 6 OR 2 is less than 1. (False, and false). ) 
+</p></1>
 
-Create an expression to force an OR property to set itself to false. (String Example).
-1. The expression has to be false on BOTH sides. Start by creating the false side on the left. 
-1A. "peanuts" === "walnuts"; (This will evaluate to false, as the string value of "peanuts" is not equal (identical) to "walnuts").
-2. Account for the need to use the || (or) operator. To do this remove the ; and add ||
-2A. "peanuts" === "walnuts" ||
+<p><strong>Create an expression to force an OR property to set itself to false. (String Example).</strong>
+        <ol>
+                <li>The expression has to be false on BOTH sides. Start by creating the false side on the left. </li>
+                <li>"peanuts" === "walnuts"; (This will evaluate to false, as the string value of "peanuts" is not equal (identical) to "walnuts").</li>
+                <li> Account for the need to use the || (or) operator. To do this remove the ; and add ||
+                        <br>A. "peanuts" === "walnuts" ||</li>
+                <li> Write the second expression that will be set to false. For simplicity sake in this example the intial string will stay as "peanuts".
+                        <br>A. "peanuts" !== "peanuts" (This will evaluate to false, as the string value of "peanuts" IS EQUAL (identical) to "peanuts", but we have told it to evaluate if they ARE NOT equal). (Now we add this chunk to the end of the expression from 2A). <br>B. "peanuts" === "walnuts" || "peanuts" !== "peanuts" (string of peanuts is equal to the string of walnuts (false), OR (||) string of peanuts is not equal to the string of peanuts (false, they are equal) ).
+                </li>
+        </ol>
+
 3. Write the second expression that will be set to false. For simplicity sake in this example the intial string will stay as "peanuts".
 3A. "peanuts" !== "peanuts" (This will evaluate to false, as the string value of "peanuts" IS EQUAL (identical) to "peanuts", but we have told it to evaluate if they ARE NOT equal). (Now we add this chunk to the end of the expression from 2A).
 3B. "peanuts" === "walnuts" || "peanuts" !== "peanuts" (string of peanuts is equal to the string of walnuts (false), OR (||) string of peanuts is not equal to the string of peanuts (false, they are equal) ).
+</p>
 
 Accessors: 
 Accessors are used to access specific elements in an array or properties on an object. 
