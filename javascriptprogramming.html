@@ -1,17 +1,45 @@
-This section will cover how javascript handles its programming. Specific elements that will be covered are: Conditionals, Loops, and Event Listeners, and Functions. 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="javascripthomehtml.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <!-- Navigation: -->
+    <h1 id="gopage"> Click below for other pages: </h1>
+    <a href="javascripthomehtml.html"> Home</a> |
+    <a href="javascriptbasicshtml.html"> Basics </a> |
+    <a href="javascriptoperatorshtml.html"> Operators</a> |
+    <a href="javascriptprogramming.html"> Programming </a> |
 
-1. Conditionals: 
-Conditionals are used to perform actions based on how a certain expression is evaluated. They reflect the value of truthfullness of certain expressions. 
-First one to cover is IF, ELSE IF, and ELSE. 
-EXAMPLE:
-First,  create an expression that states that our value (number) is 4. Then it tells the computer that if the number is greater than 10 (it's not, as 4 is less than 10), than to print to the console the string "This number is large"  then, it's telling the computer, else (which means otherwise in this case), than to print to the console the string "This number is small!"
-let number = 4; 
-if (number > 10) {
-    console.log("This number is large")
-}
-else {
-    console.log("This number is small!")
-}
+    <p> This section will cover how javascript handles its programming. Specific elements that will be covered are: Conditionals, Loops, and Event Listeners, and Functions. </p>
+    
+    <p> 1. Conditionals: 
+        Conditionals are used to perform actions based on how a certain expression is evaluated. They reflect the value of truthfullness of certain expressions. 
+        The first one that should be looked at is IF, ELSE IF, and Else.  </p>
+
+        <p>EXAMPLE:
+            First,  create an expression that states that our value (number) is 4. Then it tells the computer that if the number is greater than 10 (it's not, as 4 is less than 10), than to print to the console the string "This number is large"  then, it's telling the computer, else (which means otherwise in this case), than to print to the console the string "This number is small!"
+            let number = 4; 
+            if (number > 10) {
+                console.log("This number is large")
+            }
+            else {
+                console.log("This number is small!")
+            }</p>
+
+            <p> RESULT: 
+                The result from the above example will be the console displaying "This number is small!". The reason for this is that the computer evaluates whether the number is greater than 10 first, and it flags it as false, THEN it moves to the ELSE (The catch for if the first argument is not met), and finds that to be the case and therefore prints to the console, "This number is small!" IMPORTANT TO NOTE: If the first argument is met to be true, then the rest of the code will never be reached as the solution is already found. Conversly, the else argument will only be evaluated should the if argument is found to be false.</p>
+
+    <body>
+</html>
+
+
 RESULT: 
 The result from the above example will be the console displaying "This number is small!". The reason for this is that the computer evaluates whether the number is greater than 10 first, and it flags it as false, THEN it moves to the ELSE (The catch for if the first argument is not met), and finds that to be the case and therefore prints to the console, "This number is small!" IMPORTANT TO NOTE: If the first argument is met to be true, then the rest of the code will never be reached as the solution is already found. Conversly, the else argument will only be evaluated should the if argument is found to be false.
 
